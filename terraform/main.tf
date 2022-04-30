@@ -3,30 +3,14 @@ provider "google" {
   region  = var.region
   zone    = "${var.region}-a"
 }
-terraform {
-  backend "gcs" {
-    bucket = "mypodcast-347504-tfstate"
-  }
-}
-
-resource "google_storage_bucket" "tfstate" {
-  name          = "${var.project}-tfstate"
-  location      = "us-west1"
-  storage_class = "REGIONAL"
-  force_destroy = true
-  versioning {
-    enabled = true
-  }
-
-  lifecycle_rule {
-    action {
-      type = "Delete"
-    }
-    condition {
-      num_newer_versions = 5
-    }
-  }
-}
+# terraform {
+#   backend "remote" {
+#     organization = "jkudo"
+#     workspaces {
+#       name = "example"
+#     }
+#   }
+# }
 
 //------------------------
 // podcast rss endpoint
