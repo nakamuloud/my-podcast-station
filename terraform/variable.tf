@@ -1,7 +1,6 @@
 variable "project" {
   type = string
   default = "mypodcast-347504"
-  
 }
 variable "bucket_name" {
   type    = string

@@ -1,0 +1,1 @@
+gsutil signurl -d 10y -m GET ./credentials/rss_endpoint.json gs://podcast-rss-endpoint/podcast-rss-endpoint-template
