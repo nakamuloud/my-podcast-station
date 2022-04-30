@@ -1,0 +1,18 @@
+<rss xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd" version="2.0">
+    <channel>
+        <link>Link</link>
+        <title>Podcast</title>
+        <description>description</description>
+        <docs>Docs</docs>
+        <!--  <itunes:image href="" />  -->
+        <language>ja</language>
+        <pubDate>Sat, 25 May 2013 11:35:57 JST</pubDate>
+        <item>
+            <title>Title</title>
+            <author>Author</author>
+            <description>Description</description>
+            <enclosure type="audio/mpeg" length="" url="https://storage.cloud.google.com/my-podcast-stack/audrey/Breezin.mp3"/>
+            <pubDate>Sat, 25 May 2013 11:35:57 JST</pubDate>
+        </item>
+    </channel>
+</rss>
