@@ -3,14 +3,15 @@ provider "google" {
   region  = var.region
   zone    = "${var.region}-a"
 }
-# terraform {
-#   backend "remote" {
-#     organization = "jkudo"
-#     workspaces {
-#       name = "example"
-#     }
-#   }
-# }
+terraform {
+  cloud {
+    organization = "nakamuloud"
+
+    workspaces {
+      name = "my-podcast-station"
+    }
+  }
+}
 
 //------------------------
 // podcast rss endpoint
